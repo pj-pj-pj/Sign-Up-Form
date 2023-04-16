@@ -1,0 +1,51 @@
+/* CB4B2E */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#branding {
+  height: 100%;
+  background-image: url(assets/citystreet-by-pexels.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+#logo {
+  width: min(60%, 8rem);
+}
+
+h1 {
+  color: white;
+  font-size: 6.5rem
+}
+
+#content {
+  flex: 2;
+  margin: 7rem 0;
+}
+
+#about > button, p, form button{
+  margin: 0 20% 0 min(5%, 3rem);
+}
+
+fieldset {
+  padding: 0 20% 0 min(5%, 3rem);
+}
