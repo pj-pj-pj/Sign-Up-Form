@@ -1,4 +1,6 @@
 /* CB4B2E */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -20,21 +22,32 @@ body {
 
   display: flex;
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: baseline;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3px;
+
+  padding-top: 15rem;
+}
+
+#brand-banner {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 3px 0;
 }
 
 #logo {
-  width: min(60%, 8rem);
+  width: min(60%, 9.5rem);
 }
 
 h1 {
   color: white;
-  font-size: 6.5rem
+  font-size: 6.5rem;
+  font-family: 'Playfair Display', serif;
 }
 
 #content {
@@ -48,4 +61,17 @@ h1 {
 
 fieldset {
   padding: 0 20% 0 min(5%, 3rem);
+}
+
+#branding-footer {
+  width: 100%;
+  color: white;
+  margin-top: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 11px;
+}
+
+#branding-footer a{
+  color: white;
 }
