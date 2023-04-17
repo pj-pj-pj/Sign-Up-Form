@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Sign up</title>
 </head>
 <body>
   <section id="branding">
@@ -21,33 +21,45 @@
   </section>
   <section id="content">
     <div id="about">
-      <p> <strong>This is not a real online service!</strong> You know you need something like this. You know you need something like this in your life to help you realize you dreams. Sign up <em>now</em>.</p>
-
-      <p>You know you want to.</p>
+      <p> <strong>This is not a real online service!</strong> You know you need something like this. You know you need something like this in your life to help you realize you dreams. Sign up now.</p>
+      <br>
+      <p>You <em>know</em> you want to.</p>
     </div>
     <form>
       <fieldset>
         <h2>Let's do this!</h2>
-        <div>
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name">
+        <div class="input-container">
+          <div class="input-field">
+            <label for="first-name">FIRST NAME</label>
+            <input required type="text" id="first-name" name="first-name">
+          </div>
 
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name">
+          <div class="input-field">
+            <label for="last-name">LAST NAME</label>
+            <input required type="text" id="last-name" name="last-name">
+          </div>
         </div>
-        <div>
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
+        <div class="input-container">
+          <div class="input-field">
+            <label for="email">EMAIL</label>
+            <input required type="email" id="email" name="email">
+          </div>
 
-          <label for="tel">NUMBER</label>
-          <input type="tel" id="tel" name="tel">
+          <div class="input-field">
+            <label for="tel">NUMBER</label>
+            <input required type="tel" id="tel" name="tel">
+          </div>
         </div>
-        <div>
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
+        <div class="input-container">
+          <div class="input-field">
+            <label for="password">PASSWORD</label>
+            <input required type="password" id="password" name="password">
+          </div>
 
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" id="confirm-password" name="confirm-password">
+          <div class="input-field">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input required type="password" id="confirm-password" name="confirm-password">
+          </div>
         </div>
       </fieldset>
       <button type="submit">Create Account</button>

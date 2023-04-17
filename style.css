@@ -1,31 +1,45 @@
-/* CB4B2E */
+/* SCSS RGB */
+/* $bittersweet: rgba(249, 85, 89, 1);
+$carrot-orange: rgba(241, 147, 62, 1);
+$space-cadet: rgba(42, 38, 64, 1);
+$dark-purple: rgba(59, 32, 43, 1);
+$raisin-black: rgba(20, 18, 33, 1); */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+:root {
+  --color-text: white;
+  --bg-color: rgba(42, 38, 64, 1);
+  --content-font: 'Varela Round', sans-serif;
+  --header-font: 'Playfair Display', serif;
+  --color-highlight: rgb(212, 116, 32);
+  --color-highlight-darker: rgb(212, 116, 32, .5);
+  --content-font-size: 1.5rem;
+  --light-border: #b4b4b4;
+  --form-text: rgb(185, 185, 185);
+}
 
 * {
-  box-sizing: border-box;
+  color: var(--color-text);
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
 }
 
 #branding {
-  height: 100%;
   background-image: url(assets/citystreet-by-pexels.jpeg);
-  background-position: center;
   background-size: cover;
-
-  display: flex;
   flex: 1;
+  display: flex;
   align-items: baseline;
   flex-direction: row;
   flex-wrap: wrap;
-
   padding-top: 15rem;
 }
 
@@ -45,33 +59,106 @@ body {
 }
 
 h1 {
-  color: white;
-  font-size: 6.5rem;
-  font-family: 'Playfair Display', serif;
-}
-
-#content {
-  flex: 2;
-  margin: 7rem 0;
-}
-
-#about > button, p, form button{
-  margin: 0 20% 0 min(5%, 3rem);
-}
-
-fieldset {
-  padding: 0 20% 0 min(5%, 3rem);
+  font-size: 4rem;
+  font-family: var(--header-font);
 }
 
 #branding-footer {
   width: 100%;
-  color: white;
   margin-top: auto;
   margin-bottom: 10px;
   text-align: center;
   font-size: 11px;
 }
 
-#branding-footer a{
-  color: white;
+#content {
+  flex: 2;
+  padding: 6rem 0;
+  background-color: var(--bg-color);
+  font-family: var(--content-font);
+}
+
+#about {
+  font-size: var(--content-font-size);
+}
+
+p, form button{
+  margin-left: min(10%, 3rem);
+  margin-right: 10%;
+  max-width: 850px;
+}
+
+fieldset {
+  padding: 1.8rem;
+  padding-left: min(10%, 3rem);
+  border: none;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3), 0 -10px 10px -10px rgba(0, 0, 0, 0.3);
+  margin: 3.8rem 0 2.5rem 0;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 12px;
+  display: block;
+  color: var(--form-text);
+}
+
+input {
+  font-family: inherit;
+  background: inherit;
+  font-size: 100%;
+  color: inherit;
+
+  width: 260px;
+  border-radius: 4px;
+  border: var(--light-border) solid 0.1px;
+  min-height: 29px;
+  padding: 1px;
+  border-color: var(--form-text);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+  
+}
+
+.input-field {
+  margin: .5rem;
+  margin-right: 4rem;
+  margin-left: 0;
+}
+
+button {
+  font-family: inherit;
+  color: var(--color-highlight);
+  padding: 12px 45px;
+  border: var(--color-highlight) solid 2px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: inherit;
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  background-color: var(--color-highlight);
+  color: var(--bg-color);
+}
+
+input, button {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+  color: var(--color-highlight);
+}
+
+input:hover {
+  border-color: var(--color-highlight);
 }
