@@ -21,7 +21,7 @@
   </section>
   <section id="content">
     <div id="about">
-      <p> <strong>This is not a real online service!</strong> You know you need something like this. You know you need something like this in your life to help you realize you dreams. Sign up now.</p>
+      <p> <strong>This is not a real online service!</strong> You know you need something like this. You know you need something like this in your life to help you realize your dreams. Sign up now.</p>
       <br>
       <p>You <em>know</em> you want to.</p>
     </div>
@@ -47,18 +47,20 @@
 
           <div class="input-field">
             <label for="tel">NUMBER</label>
-            <input required type="tel" id="tel" name="tel">
+            <input required minlength="11" maxlength="11" type="tel" id="tel" name="tel" placeholder="09123456789">
           </div>
         </div>
         <div class="input-container">
           <div class="input-field">
             <label for="password">PASSWORD</label>
-            <input required type="password" id="password" name="password">
+            <input required minlength="8" type="password" id="password" name="password" aria-describedby="pw-validation">
+            <div aria-describedby="pw-validation" class="validation-message">Please use at least 8 characters</div>
           </div>
 
           <div class="input-field">
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input required type="password" id="confirm-password" name="confirm-password">
+            <input required minlength="8" type="password" id="confirm-password" name="confirm-password">
+            
           </div>
         </div>
       </fieldset>
@@ -66,5 +68,7 @@
     </form>
     <p>Already have an account? <a href="">Log in</a></p>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
