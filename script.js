@@ -11,7 +11,8 @@ fields.forEach(function(input) {
       input.style.borderColor = colorHighlight;
     } 
   });
+
+  input.addEventListener("focus", function() {
+    input.style.borderColor = colorHighlight;
+  });
 });
-
-
-
